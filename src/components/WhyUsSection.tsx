@@ -1,4 +1,4 @@
-import { Shield, Award, Wrench, Clock } from "lucide-react";
+import { Shield, Wrench, Clock, Users2 } from "lucide-react";
 
 const reasons = [
   { icon: Users2, title: "Skilled Workforce", desc: "Certified engineers, welders, and technicians with deep industry experience." },
@@ -6,8 +6,6 @@ const reasons = [
   { icon: Wrench, title: "Modern Equipment", desc: "State-of-the-art tools and machinery for superior results." },
   { icon: Clock, title: "Reliable Delivery", desc: "On-time project completion with transparent communication." },
 ];
-
-import { Users2 } from "lucide-react";
 
 const WhyUsSection = () => (
   <section id="why-us" className="section-padding">
@@ -20,7 +18,7 @@ const WhyUsSection = () => (
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {reasons.map((r, i) => (
+        {reasons.map((r) => (
           <div key={r.title} className="text-center group">
             <div className="w-16 h-16 rounded-full gradient-accent flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform">
               <r.icon size={28} className="text-primary-foreground" />
